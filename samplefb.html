@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <link rel="stylesheet" href="samplefb.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>facebook</h1>
+            </div>
+            <form class="login-form">
+                <div class="login-field">
+                    <label for="email">Email or phone</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="login-field">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass">
+                    <a href="#" class="forgot-link">Forgotten account?</a>
+                </div>
+                <div class="login-button">
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <div class="left-column">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+                <!-- Placeholder for the world map graphic -->
+                <div class="world-map-placeholder">
+                    <img src="fb2.jpg" alt="World map graphic showing connections" style="opacity: 0.5; max-width: 100%; height: auto;">
+                    <!-- In a real scenario, replace the above img tag with the actual graphic -->
+                    <!-- Or style this div with a background image -->
+                </div>
+            </div>
+
+            <div class="right-column">
+                <h2>Create an account</h2>
+                <p class="subtitle">It's quick and easy.</p>
+
+                <form class="signup-form">
+                    <div class="form-group name-group">
+                        <input type="text" name="firstname" placeholder="First name" aria-label="First name">
+                        <input type="text" name="surname" placeholder="Surname" aria-label="Surname">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="reg_email__" placeholder="Mobile number or email address" aria-label="Mobile number or email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="reg_passwd__" placeholder="New password" aria-label="New password">
+                    </div>
+
+                    <div class="form-group birthday-group">
+                        <label for="birthday_day" class="form-label">Birthday</label>
+                        <div class="birthday-selectors">
+                            <select name="birthday_day" id="birthday_day" title="Day">
+                                <option value="3">3</option>
+                                <!-- Add other days -->
+                            </select>
+                            <select name="birthday_month" id="birthday_month" title="Month">
+                                <option value="6">Jun</option>
+                                <!-- Add other months -->
+                            </select>
+                            <select name="birthday_year" id="birthday_year" title="Year">
+                                <option value="1995">1995</option>
+                                <!-- Add other years -->
+                            </select>
+                            <a href="#" class="help-icon" aria-label="Why do I need to provide my date of birth?">?</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group gender-group">
+                         <label class="form-label">Gender</label>
+                         <div class="gender-options">
+                            <span class="radio-option">
+                                <input type="radio" name="sex" value="1" id="female">
+                                <label for="female">Female</label>
+                            </span>
+                             <span class="radio-option">
+                                <input type="radio" name="sex" value="2" id="male">
+                                <label for="male">Male</label>
+                            </span>
+                             <span class="radio-option">
+                                <input type="radio" name="sex" value="-1" id="custom">
+                                <label for="custom">Custom</label>
+                            </span>
+                            <a href="#" class="help-icon" aria-label="Learn more about gender options">?</a>
+                         </div>
+                    </div>
+
+                    <p class="terms">
+                        By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                    </p>
+
+                    <div class="signup-button-container">
+                        <button type="submit" class="signup-button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

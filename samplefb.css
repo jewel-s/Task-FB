@@ -1,0 +1,289 @@
+/* Basic Reset & Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5; /* Light grey background */
+  color: #1c1e21; /* Default text color */
+  line-height: 1.34;
+}
+
+a {
+  color: #385898; /* Facebook blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styling */
+.header {
+  background-color: #3b5998; /* Facebook dark blue */
+  padding: 10px 0;
+  border-bottom: 1px solid #29487d;
+}
+
+.header-container {
+  width: 980px; /* Standard Facebook container width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 38px; /* Approximate size */
+  font-weight: bold;
+  padding-top: 10px; /* Adjust vertical alignment */
+  margin: 0;
+}
+
+.login-form {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 15px; /* Space between form elements */
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-field label {
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.login-field input[type="text"],
+.login-field input[type="password"] {
+  padding: 5px;
+  border: 1px solid #1d2a5b;
+  font-size: 12px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.forgot-link {
+  color: #9cb4d8; /* Lighter blue for forgot link */
+  font-size: 11px;
+  margin-top: 3px;
+  display: block; /* Make it take its own line */
+}
+
+.forgot-link:hover {
+  color: #ffffff;
+}
+
+.login-button button {
+  background-color: #4267b2; /* Slightly lighter blue for button */
+  border: 1px solid #29487d;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 18px; /* Align with input fields */
+  transition: background-color 0.2s;
+}
+
+.login-button button:hover {
+  background-color: #365899;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 20px 0 80px 0; /* Add padding top and bottom */
+}
+
+.content-container {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align columns to the top */
+}
+
+/* Left Column */
+.left-column {
+  width: 56%; /* Approximate width */
+  padding-right: 30px;
+  padding-top: 40px; /* Add some top padding */
+}
+
+.left-column h2 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #1c1e21;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.world-map-placeholder {
+  margin-top: 20px;
+  /* If using a background image: */
+  /* background: url('path/to/your/map.png') no-repeat center center; */
+  /* background-size: contain; */
+  /* height: 200px; Adjust height as needed */
+}
+.world-map-placeholder img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8; /* Make it slightly faded like the original */
+}
+
+
+/* Right Column (Signup Form) */
+.right-column {
+  width: 40%; /* Approximate width */
+}
+
+.right-column h2 {
+  font-size: 36px;
+  font-weight: 600; /* Semibold */
+  color: #1c1e21;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #1c1e21;
+  margin-bottom: 20px;
+}
+
+.signup-form .form-group {
+  margin-bottom: 10px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.signup-form input::placeholder {
+  color: #8a8d91;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px; /* Space between name fields */
+}
+
+.name-group input {
+  flex: 1; /* Make inputs share space equally */
+}
+
+.form-label {
+  font-size: 12px;
+  color: #606770;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.birthday-group .birthday-selectors,
+.gender-group .gender-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.birthday-selectors select {
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  background-color: #ffffff;
+  flex-grow: 1; /* Allow selects to grow */
+}
+
+.help-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #8a8d91;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-left: 5px; /* Space from the last element */
+}
+
+.help-icon:hover {
+  background-color: #606770;
+  text-decoration: none;
+}
+
+.gender-options .radio-option {
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1; /* Allow options to grow */
+}
+
+.gender-options label {
+  font-size: 14px;
+  color: #1c1e21;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 3px;
+}
+
+.terms {
+  font-size: 11px;
+  color: #777;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.terms a {
+  color: #385898;
+}
+
+.signup-button-container {
+  text-align: center; /* Center the button */
+  margin-top: 20px;
+}
+
+.signup-button {
+  background: linear-gradient(#67ae55, #578843); /* Green gradient */
+  border: 1px solid #3b6e22;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 32px; /* Generous padding */
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: 194px; /* Minimum width like the original */
+}
+
+.signup-button:hover {
+  background: linear-gradient(#5f9e4f, #4f7a3c);
+}
+
+/* Placeholder image styling (optional, if you use the placeholder) */
+.world-map-placeholder img {
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center if needed */
+  max-width: 500px; /* Limit size */
+  opacity: 0.9;
+}
